@@ -1,0 +1,15 @@
+{
+  "name": "Python TTS Environment",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:0-3.10",
+  "containerEnv": {
+    "OPENAI_API_KEY": "${{ secrets.OPENAI_API_KEY }}",
+    "AZURE_API_KEY": "${{ secrets.AZURE_API_KEY }}",
+    "AZURE_REGION": "${{ secrets.AZURE_REGION }}"
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-python.vscode-pylance"]
+    }
+  }
+}
