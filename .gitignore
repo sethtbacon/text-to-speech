@@ -1,0 +1,13 @@
+# Ignore generated audio files
+output.mp3
+output_azure.mp3
+
+# Ignore environment files
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore VSCode settings folder
+.vscode/
